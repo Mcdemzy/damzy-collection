@@ -110,32 +110,3 @@ swiper-container {
   height: 100vh;
   /* background: rgba(29, 146, 223, 0.5); */
 }
-
-.hero__container {
-}
-
-.hero__container h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--bg-black);
-}
-
-.hero__container h2 {
-  font-size: 4rem;
-  font-weight: 500;
-  color: var(--color-variant);
-  line-height: 72px;
-}
-
-.hero__container p {
-  margin-top: 1rem;
-  max-width: 420px;
-  color: rgba(29, 146, 223, 0.5);
-  /* font-size: 0.8rem; */
-}
-
-.hero__image {
-  max-width: 500px;
-  height: 600px;
-  /* background: ; */
-}
