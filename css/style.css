@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +11,22 @@
   list-style: none;
 }
 
+/* Root variables */
 :root {
-  --color-bg: #fffff;
+  --color-bg: #ffffff; /* Adjusted to white */
   --color-variant: #1d92df;
   --text-color: #ffffff;
+  --text-black: #ffffff;
   --bg-black: #000000;
 }
 
+/* Body styles */
 body {
   font-family: "Poppins", sans-serif;
   height: 200vh;
 }
 
-/* POPUP NAVBAR */
-
+/* Popup Navbar styles */
 .popup__nav,
 swiper-container {
   width: 100%;
@@ -41,22 +45,65 @@ swiper-container {
   color: var(--text-color);
 }
 
-/* NAVBAR */
-
+/* Navbar styles */
 .navbar {
   width: 100%;
   height: 80px;
   background: var(--color-bg);
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-around;
   align-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1000; /* Increased z-index value */
 }
 
 .navbar.fixed {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1000; /* Increased z-index value */
   transition: top 0.3s ease-in-out;
+}
+
+.nav-detail {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: var(--color-variant);
+  text-transform: uppercase;
+}
+
+.navbar ul li a.active__nav-item {
+  position: relative;
+}
+
+.navbar ul li a.active__nav-item:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-variant);
+  position: absolute;
+  bottom: -5px;
+}
+
+.nav-logo {
+  width: 250px;
+  height: 60px;
+  background: var(--color-variant);
+}
+
+/* Main section styles */
+.hero-main {
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+  background: gray;
 }
