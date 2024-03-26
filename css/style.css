@@ -14,11 +14,12 @@
 /* Root variables */
 :root {
   --color-bg: #ffffff; /* Adjusted to white */
-  --color-variant: #1d92df;
+  --color-variant: #1c90de;
   --text-color: #ffffff;
   --text-black: #ffffff;
   --bg-black: #000000;
   --hero-bg: #d1d1d1;
+  --text-grey: #222529b3;
 }
 
 /* Body styles */
@@ -104,11 +105,37 @@ swiper-container {
 /* Main section styles */
 .hero-main {
   padding-top: 100px;
+  padding-left: 100px;
   width: 100%;
   height: 100vh;
-  background: var(--hero-bg);
+  /* background: rgba(29, 146, 223, 0.5); */
 }
 
-.hero-main h1 {
-  font-size: 2rem;
+.hero__container {
+}
+
+.hero__container h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--bg-black);
+}
+
+.hero__container h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--color-variant);
+  line-height: 72px;
+}
+
+.hero__container p {
+  margin-top: 1rem;
+  max-width: 420px;
+  color: rgba(29, 146, 223, 0.5);
+  /* font-size: 0.8rem; */
+}
+
+.hero__image {
+  max-width: 500px;
+  height: 600px;
+  /* background: ; */
 }
