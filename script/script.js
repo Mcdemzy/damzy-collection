@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     document.getElementById("loader-container").style.display = "none";
     document.getElementById("content").style.display = "block";
-  }, 2000); // Adjust the delay time as needed
+  }, 1000); // Adjust the delay time as needed
 });
 
 // NAVBAR BEHAVIOUR
