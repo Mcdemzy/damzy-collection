@@ -10,10 +10,9 @@ window.addEventListener("load", function () {
 // NAVBAR BEHAVIOUR
 window.addEventListener("scroll", function () {
   var navbar = document.getElementById("navbar");
-  var navbarOffsetTop = navbar.offsetTop;
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollPosition > navbarOffsetTop) {
+  if (scrollPosition > navbar.offsetHeight) {
     navbar.classList.add("fixed");
   } else {
     navbar.classList.remove("fixed");
