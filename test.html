@@ -8,40 +8,46 @@
     <title>Document</title>
     <style>
       .hero__container {
-        padding-top: 100px;
+        padding-top: 80px;
         padding-left: 100px;
         width: 100%;
         height: 100vh;
-        /* background: rgba(29, 146, 223, 0.5); */
+        background: rgba(29, 146, 223, 0.5);
+
         display: flex;
         justify-content: space-around;
       }
 
+      .hero__details {
+        margin-top: 90px;
+      }
+
       .hero__container h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 500;
-        color: #312238;
+        color: var(--color-variant);
         padding-bottom: 1rem;
       }
 
       .hero__container h2 {
         font-size: 4rem;
         font-weight: 500;
-        color: var(--color-variant);
+        color: #fff;
         line-height: 72px;
       }
 
       .hero__container p {
         margin-top: 1rem;
         max-width: 420px;
-        color: black;
+        color: var(--color-variant);
         font-size: 1rem;
       }
 
       .hero__image {
-        max-width: 500px;
-        height: 600px;
-        /* background: ; */
+        /* width: 600px; */
+        height: 500px;
+        background: var(--color-variant);
+        border-radius: 150px 0px 0px 80px;
       }
     </style>
   </head>
@@ -58,7 +64,7 @@
       </div>
 
       <div class="hero__image">
-        <img src="img/shoe2.jpg" width="450" alt="" />
+        <img src="img/shoe.png" width="450" alt="" />
       </div>
     </section>
   </body>
